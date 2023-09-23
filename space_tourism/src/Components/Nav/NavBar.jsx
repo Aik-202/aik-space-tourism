@@ -1,7 +1,14 @@
 import React from 'react'
+import NavItems from './NavItems'
+import { Logo } from '../../Data'
 
 export default function NavBar() {
   return (
-    <div>NavBar</div>
+    <nav>
+      <figure>
+        <img src={Logo} alt="logo" />
+      </figure>
+      <NavItems />
+    </nav>
   )
 }
