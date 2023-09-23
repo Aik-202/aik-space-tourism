@@ -23,6 +23,21 @@ export default {
         'technology-tablet': "url(./src/Data/images/technology/background-technology-tablet.jpg)",
         'technology-desktop': "url(./src/Data/images/technology/background-technology-desktop.jpg)",
 
+      },
+      colors: {
+        'white': "#ffffff",
+        'light-blue': "#d0d6f9",
+        'dark-blue': "#0b0d17"
+      },
+      fontSize: {
+        'very-big': "150px",
+        'big': "100px",
+        'medium': "56px",
+        'small-medium': "32px",
+        'smallest-medium': "28px",
+        'small': "16px",
+        'smallest': "14px",        
+
       }
     },
   },
