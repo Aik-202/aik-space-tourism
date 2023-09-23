@@ -14,10 +14,10 @@ export default function NavBar() {
   }
 
   return (
-    <nav>
+    <nav className='sm:flex sm:flex-row sm:justify-between'>
       <figure className="flex flex-row justify-between p-5 cursor-pointer">
         <img src={Logo} alt="logo" className='self-center'/>
-        {!menuActive && <img src={Hamburger} alt="menu-bar" className="self-center" onClick={menuOpen}/>}
+        {!menuActive && <img src={Hamburger} alt="menu-bar" className="self-center sm:hidden" onClick={menuOpen}/>}
       </figure>
       <NavItems menuStatus={menuActive} close={menuClose}/>
     </nav>
