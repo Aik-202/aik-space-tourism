@@ -110,3 +110,21 @@ export const technology = [
     description: "A space capsule is an often-crewed spacecraft that uses a blunt-body reentry capsule to reenter the Earth's atmosphere without wings. Our capsule is where you'll spend your time during the flight. It includes a space gym, cinema, and plenty of other activities to keep you entertained."
   }
 ]
+export const nav = [
+  {
+    id: '00',
+    name: 'Home'
+  },
+  {
+    id: '01',
+    name: 'Destination'
+  },
+  {
+    id: '02',
+    name: 'Crew'
+  },
+  {
+    id: '03',
+    name: 'Technology'
+  }
+]

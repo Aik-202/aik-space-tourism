@@ -38,6 +38,10 @@ export default {
         'small': "16px",
         'smallest': "14px",        
 
+      },
+      fontFamily: {
+        'font-one': "Bellefair, serif",
+        'font-two': "Barlow Condensed, sans-serif",
       }
     },
   },

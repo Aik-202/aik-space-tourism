@@ -19,7 +19,7 @@ export default function NavBar() {
         <img src={Logo} alt="logo" className='self-center'/>
         {!menuActive && <img src={Hamburger} alt="menu-bar" className="self-center sm:hidden" onClick={menuOpen}/>}
       </figure>
-      <hr className='hidden lg:block bg-white self-center h-[0.188rem] opacity-10 border-t-[1px] w-[10rem] -mr-20 lg:w-[30rem] lg:-mr-24' />
+      <hr className='hidden lg:block bg-white self-center h-[0.188rem] opacity-10 border-t-[1px] w-[10rem] -mr-20 xl:w-[30rem] xl:-mr-24' />
       <NavItems menuStatus={menuActive} close={menuClose}/>
     </nav>
   )
