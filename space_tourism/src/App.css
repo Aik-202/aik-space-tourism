@@ -1,15 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
 body {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 * {
   margin: 0;
   padding: 0;
 }
-/* ul>li {
+/* article {
   border: 1px solid red;
-}
-ul {
+} */
+/* section {
   border: 1px solid green;
 } */

@@ -56,7 +56,7 @@ export default function NavItems(props) {
       }
       {props.use == "dest" &&
         <ul className='self-center flex flex-row flex-wrap content-center justify-center space-x-10 items-center 
-        text-light-blue w-screen cursor-pointer'>
+        text-light-blue w-screen cursor-pointer font-font-two uppercase tracking-wider'>
           {destinations.map(items => (
             <li key={items.name} className=
             {`
