@@ -42,6 +42,9 @@ export default {
       fontFamily: {
         'font-one': "Bellefair, serif",
         'font-two': "Barlow Condensed, sans-serif",
+      },
+      backgroundSize: {
+        '100%': "100%"
       }
     },
   },

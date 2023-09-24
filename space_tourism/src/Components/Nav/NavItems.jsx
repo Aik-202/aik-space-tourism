@@ -47,8 +47,8 @@ export default function NavItems(props) {
           hover:border-b-2 hover:border-light-blue hover:border-solid sm:h-full sm:flex sm:flex-row sm:justify-center 
           sm:content-center sm:flex-wrap
           `}>
-          <span className='tracking-widest mr-4 font-extrabold sm:hidden lg:block'>{item.id}</span>
-          <span className='text-light-blue tracking-widest uppercase text-smallest self-center'>{item.name}</span>
+          <span className='tracking-widest mr-4 font-extrabold sm:hidden lg:block sm:text-small'>{item.id}</span>
+          <span className='text-light-blue tracking-widest uppercase text-smallest self-center sm:text-small'>{item.name}</span>
           </li>
         ))}
       </ul>
@@ -56,7 +56,7 @@ export default function NavItems(props) {
       }
       {props.use == "dest" &&
         <ul className='self-center flex flex-row flex-wrap content-center justify-center space-x-10 items-center 
-        text-light-blue w-screen cursor-pointer font-font-two uppercase tracking-wider'>
+        text-light-blue w-screen cursor-pointer font-font-two uppercase tracking-wider sm:text-smallest-medium'>
           {destinations.map(items => (
             <li key={items.name} className=
             {`

@@ -20,8 +20,8 @@ export default function Planet() {
     } 
   }
   return (
-    <section className='flex flex-col flex-wrap content-center items-center justify-center space-y-5'>
-      <h1 className='text-light-blue font-font-two uppercase tracking-widest'>
+    <section className='flex flex-col flex-wrap content-center items-center justify-center space-y-5 sm:space-y-10'>
+      <h1 className='text-light-blue font-font-two uppercase tracking-widest mb-5 sm:self-start sm:ml-10 sm:text-smallest-medium'>
         <span className='tracking-widest mr-4 font-extrabold'>01</span>
         Pick your destination
       </h1>
@@ -34,7 +34,7 @@ export default function Planet() {
           item.name =="Titan" && planetActive == "titan" ? 'block':
           'hidden'
           }
-          self-center mx-auto w-[13rem]
+          self-center mx-auto w-[13rem] sm:w-[20rem]
         `}
         >
           <img src={item.images.png} alt={item.name} />
