@@ -26,7 +26,7 @@ export default function NavBar(props) {
         -mr-20 xl:w-[30rem] xl:-mr-24' />
       }
       <NavItems menuStatus={menuActive} close={menuClose} homeActive={props.homeActive} destActive = {props.destActive} 
-      crewActive= {props.crewActive} techActive={props.techActive} use={props.for}/>
+      crewActive= {props.crewActive} techActive={props.techActive} use={props.for} active={props.active} navClick={props.navClick}/>
     </nav>
   )
 }

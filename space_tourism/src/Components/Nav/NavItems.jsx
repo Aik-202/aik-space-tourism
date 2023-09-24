@@ -55,9 +55,19 @@ export default function NavItems(props) {
       </div>
       }
       {props.use == "dest" &&
-        <ul className='self-center flex flex-row flex-wrap content-center justify-center space-x-10 items-center text-light-blue w-screen'>
+        <ul className='self-center flex flex-row flex-wrap content-center justify-center space-x-10 items-center 
+        text-light-blue w-screen cursor-pointer'>
           {destinations.map(items => (
-            <li key={items.name} className='hover:border-solid hover:border-b-2 hover:border-white'>
+            <li key={items.name} className=
+            {`
+              ${items.name =="Moon" && props.active == "moon" ? 'border-b-white border-b-2 border-solid':
+              items.name =="Mars" && props.active == "mars" ? 'border-b-white border-b-2 border-solid':
+              items.name =="Europa" && props.active == "europa" ? 'border-b-white border-b-2 border-solid':
+              items.name =="Titan" && props.active == "titan" ? 'border-b-white border-b-2 border-solid':
+              'border-b-transparent'
+              }
+              hover:border-solid hover:border-b-2 hover:border-white
+            `} onClick={props.navClick}>
               {items.name}
             </li>
           ))}
