@@ -20,7 +20,7 @@ export default function Crew() {
   }
 
   return (
-    <section className='home w-full h-full bg-[#282B34] xl:bg-[#20222A]'>
+    <section className='home w-full h-max lg:h-full xl:h-max bg-[#282B34] xl:bg-[#20222A]'>
       <NavBar homeActive={false} destActive = {false} crewActive= {true} techActive={false} for={"main"}/>
       <CrewMemebers crewActive={crewActive} change={crewChange}/>
   </section>
