@@ -10,13 +10,13 @@ export default function Term(props) {
         <span className='tracking-widest mr-4 font-extrabold opacity-[15%]'>03</span>
         Space Launch 101 
       </h1>
-      <div className='flex flex-col-reverse sm:flex-col lg:flex-row lg:space-x-32 lg:ml-10 xl:ml-40 xl:-space-x-10'>
+      <div className='flex flex-col-reverse lg:flex-row lg:space-x-10 lg:ml-10 xl:ml-40 xl:space-x-32'>
       <About techActive={props.techActive} change={props.change}/>
         <div className='flex flex-col space-y-5 sm:space-y-7 lg:space-y-0 lg:flex-row lg:space-x-24 xl:space-x-40 xl:mx-18'>
           {technology.map(item => 
             <figure key={item.images.portrait} className=
             {`
-              ${item.name =="Launch vehicle" && props.techActive == "Launch" ? 'block':
+              ${item.name =="Launch vehicle" && props.techActive == "Launch" ? 'block lg:ml-24 xl:ml-40':
               item.name =="Spaceport" && props.techActive == "Port" ? 'block':
               item.name =="Space capsule" && props.techActive == "Capsule" ? 'block':
               'hidden'

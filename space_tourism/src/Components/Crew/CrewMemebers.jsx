@@ -15,7 +15,7 @@ export default function CrewMemebers(props) {
           {crew.map(item => 
             <figure key={item.images.png} className=
             {`
-              ${item.name =="Douglas Hurley" && props.crewActive == "Douglas" ? 'block lg:ml-10 xl:ml-40':
+              ${item.name =="Douglas Hurley" && props.crewActive == "Douglas" ? 'block lg:ml-24 xl:ml-52':
               item.name =="Mark Shuttleworth" && props.crewActive == "Mark" ? 'block':
               item.name =="Victor Glover" && props.crewActive == "Victor" ? 'block':
               item.name =="Anousheh Ansari" && props.crewActive == "Ansari" ? 'block':
