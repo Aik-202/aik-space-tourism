@@ -28,7 +28,7 @@ export default function NavItems(props) {
       sm:flex-wrap sm:justify-center sm:px-8 lg:pr-52 lg:pl-20 cursor-pointer w-full
       `}>
         {props.menuStatus && 
-          <figure className='flex items-end justify-center content-end flex-wrap mt-8 -mr-12 sm:hidden'>
+          <figure className='flex items-end justify-center content-end flex-wrap mt-8 -mr-12 sm:hidden cursor-pointer'>
             <img src={Close} alt="menu-bar" className="self-end" onClick={props.close}/>
           </figure>
         }

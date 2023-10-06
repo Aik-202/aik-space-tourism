@@ -20,7 +20,7 @@ export default function Term(props) {
               item.name =="Spaceport" && props.techActive == "Port" ? 'block':
               item.name =="Space capsule" && props.techActive == "Capsule" ? 'block':
               'hidden'
-              } flex flex-col`}
+              } flex flex-col cursor-pointer`}
             >
               <img src={window.screen.availWidth <= 912 ? item.images.landscape : item.images.portrait } alt={item.name} className='self-center w-full lg:w-[20rem]'/>
             </figure>

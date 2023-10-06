@@ -9,7 +9,7 @@ export default function CrewMemebers(props) {
         <span className='tracking-widest mr-4 font-extrabold opacity-[15%]'>02</span>
         Meet your Crew
       </h1>
-     <div className='flex flex-col-reverse sm:flex-col lg:flex-row lg:space-x-32 lg:ml-10 xl:ml-40 xl:-space-x-10'>
+     <div className='flex flex-col-reverse sm:flex-col lg:flex-row lg:space-x-32 lg:ml-10 xl:ml-40 xl:space-x-30'>
       <CrewInfo crewActive={props.crewActive} change={props.change}/>
         <div className='flex flex-col space-y-5 sm:space-y-7 lg:space-y-0 lg:flex-row lg:space-x-24 xl:space-x-40 xl:mx-18'>
           {crew.map(item => 
@@ -20,9 +20,9 @@ export default function CrewMemebers(props) {
               item.name =="Victor Glover" && props.crewActive == "Victor" ? 'block':
               item.name =="Anousheh Ansari" && props.crewActive == "Ansari" ? 'block':
               'hidden'
-              } flex flex-col mx-3`}
+              } flex flex-col mx-3 cursor-pointer`}
             >
-              <img src={item.images.png} alt={item.name} className='self-center w-[13rem] sm:w-[24rem] lg:w-[18rem] xl:w-[25rem]' />
+              <img src={item.images.png} alt={item.name} className='self-center w-[13rem] sm:w-[24rem] lg:w-[18rem] xl:w-[17.2rem]' />
               <hr className='bg-white self-center h-[0.12rem] opacity-5 border-t-[1px] w-full sm:hidden'/>
             </figure>
           )}

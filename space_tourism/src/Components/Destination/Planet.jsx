@@ -35,7 +35,7 @@ export default function Planet() {
             item.name =="Titan" && planetActive == "titan" ? 'block':
             'hidden'
             }
-            self-center w-[13rem] sm:w-[20rem] lg:w-[23rem]
+            self-center w-[13rem] sm:w-[20rem] lg:w-[23rem] cursor-pointer
           `}
           >
             <img src={item.images.png} alt={item.name} />
