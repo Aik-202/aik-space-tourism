@@ -20,7 +20,7 @@ export default function CrewInfo (props) {
               </div>
           </section>
         )}
-        <nav className='flex flex-row flex-wrap content-center items-center justify-center space-x-4 lg:justify-start lg:content-start lg:items-start'>
+        <nav className='flex flex-row flex-wrap content-center items-center justify-center space-x-4 lg:justify-start lg:content-start lg:items-start cursor-pointer'>
             <span className={`rounded-[100%] bg-white 
             ${ props.crewActive == "Douglas" ? 'opacity-1' : 'opacity-[20%]'} px-1 py-1 border-2 border-solid`}
             id='Douglas Hurley' onClick={props.change}></span>
