@@ -5,23 +5,24 @@ export default function Crew() {
   const [crewActive, setCrewActive] = React.useState("Douglas");
 
   const crewChange = (e) => {
-    if (e.target.innerHTML == "Douglas Hurley") {
+    if (e.target.id == "Douglas Hurley") {
       setCrewActive("Douglas")
     } 
-    if (e.target.innerHTML == "Mark Shuttleworth") {
+    if (e.target.id == "Mark Shuttleworth") {
       setCrewActive("Mark")
     } 
-    if (e.target.innerHTML == "Victor Glover") {
+    if (e.target.id == "Victor Glover") {
       setCrewActive("Victor")
     } 
-    if (e.target.innerHTML == "Anousheh Ansari") {
+    if (e.target.id == "Anousheh Ansari") {
       setCrewActive("Ansari")
     } 
   }
+
   return (
-    <section className='home w-full h-full bg-[#444457] bg-opacity-5`'>
+    <section className='home w-full h-full bg-[#282B34] xl:bg-[#20222A]'>
       <NavBar homeActive={false} destActive = {false} crewActive= {true} techActive={false} for={"main"}/>
-      <CrewMemebers crewActive={crewActive} crewChange={crewChange}/>
+      <CrewMemebers crewActive={crewActive} change={crewChange}/>
   </section>
     
   )
