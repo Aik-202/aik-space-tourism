@@ -26,17 +26,17 @@ body {
   animation: hometext 2s;
 }
 
-.dest-info>section>div, .crew>div>div>figure, .tech>div>div>figure {
+.dest-info>section>div, .crew>div>div>figure, .tech>div>div>figure, .explore {
   transition: 0.5s;
   transform-origin: left;
   animation: texttwo 2s;
 }
 
-.explore, .nav>div>ul>li, .nav>ul>li {
+.nav>div>ul>li, .nav>ul>li {
   transition: 1.5s;
 }
 
-.dest>div>figure {
+.dest>div>figure{
   animation: rotateplanet 2s;
 }
 

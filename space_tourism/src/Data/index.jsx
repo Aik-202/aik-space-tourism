@@ -1,3 +1,5 @@
+export{default as Music} from './images/activate/music.png'
+
 export{default as CrewDesktop} from './images/crew/background-crew-desktop.jpg';
 export{default as CrewMobile} from './images/crew/background-crew-mobile.jpg';
 export{default as CrewTablet} from './images/crew/background-crew-tablet.jpg';
