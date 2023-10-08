@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Bellefair&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,13 +14,83 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .home {
   height: inherit;
   width: inherit;
 }
-/* article {
-  border: 1px solid red;
-} */
-/* section {
-  border: 1px solid green;
-} */
+
+.home-text, .dest>h1, .crew>h1, .crew-info>section, .crew-info>nav, .tech>h1, .tech-info {
+  transition: 0.5s;
+  transform-origin: left;
+  animation: hometext 2s;
+}
+
+.dest-info>section>div, .crew>div>div>figure, .tech>div>div>figure {
+  transition: 0.5s;
+  transform-origin: left;
+  animation: texttwo 2s;
+}
+
+.explore, .nav>div>ul>li, .nav>ul>li {
+  transition: 1.5s;
+}
+
+.dest>div>figure {
+  animation: rotateplanet 2s;
+}
+
+@keyframes rotateplanet {
+  0% {
+    perspective: 100px;
+    transform: rotateZ(-15deg);
+  }
+  100% {
+    perspective: 0px;
+    transform: rotateZ(0deg);
+  }
+}
+
+@keyframes hometext {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@keyframes texttwo {
+  0% {
+    transform: translateY(10%);
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@media (min-width: 1024px) {
+  @keyframes hometext {
+    0% {
+      transform: translateX(-10%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @keyframes texttwo {
+    0% {
+      transform: translateX(10%);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  
+}

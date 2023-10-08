@@ -20,7 +20,7 @@ export default function NavItems(props) {
     } 
   }
   return (
-    <section className='flex'>
+    <section className='nav flex'>
       {props.use == "main" && <div className=
       {`
       ${props.menuStatus ? 'flex' : 'hidden sm:flex'}

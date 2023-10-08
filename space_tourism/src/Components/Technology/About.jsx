@@ -3,7 +3,7 @@ import { technology } from '../../Data/demo'
 
 export default function About(props) {
   return (
-    <article className='flex flex-col-reverse lg:flex-row-reverse'>
+    <article className='tech-info flex flex-col-reverse lg:flex-row-reverse'>
       <div className='flex flex-col-reverse lg:ml-10 lg:mb-8'>
         {technology.map(info => 
           <section key={info.name} className={`
@@ -26,10 +26,10 @@ export default function About(props) {
           <span className={`rounded-[100%] 
           ${ props.techActive == "Launch" ? 'bg-white' : 'bg-transparent text-white'} px-3 py-1 lg:px-5 lg:py-2 border-2 border-solid`}
           id='Launch vehicle' onClick={props.change}>1</span>
-          <span className={`rounded-[100%] bg-white 
+          <span className={`rounded-[100%] 
           ${ props.techActive == "Port" ? 'bg-white' : 'bg-transparent text-white'} px-3 py-1 lg:px-5 lg:py-2 border-2 border-solid`}
           id='Spaceport' onClick={props.change}>2</span>
-          <span className={`rounded-[100%] bg-white 
+          <span className={`rounded-[100%]
           ${ props.techActive == "Capsule" ? 'bg-white' : 'bg-transparent text-white'} px-3 py-1 lg:px-5 lg:py-2 border-2 border-solid`}
           id='Space capsule' onClick={props.change}>3</span>
       </nav>

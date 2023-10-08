@@ -3,7 +3,7 @@ import { destinations } from '../../Data/demo'
 
 export default function PlanetInfo (props) {
   return (
-    <article className='self-end'>
+    <article className='dest-info self-end'>
       {destinations.map(info => 
         <section key={info.name} className=
         {`

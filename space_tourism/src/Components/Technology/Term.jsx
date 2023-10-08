@@ -5,7 +5,7 @@ import {About} from '../'
 export default function Term(props) {
   window.onresize = () => {location.reload()}
   return (
-    <section className='flex flex-col flex-wrap content-center items-center justify-center space-y-5 sm:space-y-10 xl:items-start xl:content-start xl:justify-start'>
+    <section className='tech flex flex-col flex-wrap content-center items-center justify-center space-y-5 sm:space-y-10 xl:items-start xl:content-start xl:justify-start'>
       <h1 className='text-white font-font-two uppercase tracking-widest mb-5 self-start ml-10 sm:text-[20px] lg:text-[23px] xl:ml-40 xl:mt-5'>
         <span className='tracking-widest mr-4 font-extrabold opacity-[15%]'>03</span>
         Space Launch 101 

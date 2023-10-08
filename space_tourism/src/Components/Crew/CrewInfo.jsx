@@ -3,7 +3,7 @@ import { crew } from '../../Data/demo';
 
 export default function CrewInfo (props) {
   return (
-      <article className='flex flex-col-reverse space-y-10 sm:flex-col'>
+      <article className='crew-info flex flex-col-reverse space-y-10 sm:flex-col'>
         {crew.map(info => 
           <section key={info.name} className={`
           ${info.name =="Douglas Hurley" && props.crewActive == "Douglas" ? 'flex mt-5':
