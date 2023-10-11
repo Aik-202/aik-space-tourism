@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavBar, Planet} from '../Components'
+import {NavBar, Planet, Music} from '../Components'
 
 export default function Destination() {
   return (

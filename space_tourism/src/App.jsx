@@ -1,3 +1,4 @@
+import React from 'react'
 import {
     BrowserRouter as Router,
     Routes,
@@ -12,6 +13,7 @@ import {
 
 } from './Pages'
 import './App.css'
+import { Music } from './Components';
 
 export default function App() {
     return (
@@ -25,6 +27,7 @@ export default function App() {
                     <Route exact path="/technology" element={<Technology />} ></Route>
                 </Routes>
             </Router>
+            <Music />
         </>
     )
 }

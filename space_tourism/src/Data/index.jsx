@@ -1,4 +1,8 @@
-export{default as Music} from './images/activate/music.png'
+export{default as Song} from './images/activate/music.png'
+export{default as Pause} from './images/activate/pause.png'
+export{default as Play} from './images/activate/play.png'
+
+export{default as SpaceMusic} from './music/space-music.mp3'
 
 export{default as CrewDesktop} from './images/crew/background-crew-desktop.jpg';
 export{default as CrewMobile} from './images/crew/background-crew-mobile.jpg';

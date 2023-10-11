@@ -2,6 +2,8 @@ import React from 'react';
 import {CrewMemebers, NavBar} from '../Components'
 
 export default function Crew() {
+  // const data = window.localStorage.getItem('status');
+  // const status = JSON.parse(data);
   const [crewActive, setCrewActive] = React.useState("Douglas");
 
   const crewChange = (e) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import {NavBar, Term} from '../Components'
+import {NavBar, Term, Music} from '../Components'
 
 export default function Technology() {
   const [techActive, settechActive] = React.useState("Launch");
