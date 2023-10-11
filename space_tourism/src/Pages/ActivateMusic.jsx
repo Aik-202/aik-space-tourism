@@ -1,8 +1,10 @@
 import React from 'react'
 import { Song } from '../Data'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 
 export default function ActivateMusic(){ 
+    const navigate = useNavigate();
+
     const [music, setMusic] = React.useState("");
     const [status, setStatus]= React.useState("false");
 
@@ -19,14 +21,14 @@ export default function ActivateMusic(){
         setMusic("ok");
         setStatus("true");
         setTimeout(() => {
-            window.location.replace('https://aik-space-tourism.vercel.app/home')
+            navigate('/home');
         }, 500);
     }
     const no = (e) => {
         setMusic("no");
         setStatus("false")
         setTimeout(() => {
-            window.location.replace('https://aik-space-tourism.vercel.app/home')
+            navigate('/home');
         }, 500);
     }
 
@@ -43,8 +45,8 @@ export default function ActivateMusic(){
                 </div>
                 <p className='px-5 font-font-one text-[18px] text-black'>For a feeling of nostalgia, activate music!</p>
                 <div className='flex flex-row justify-between space-x-10 font-font-one pb-5 cursor-pointer'>
-                    <Link className= {`${music == "no" ? 'bg-light-blue text-black' : 'bg-dark-blue text-white' } rounded-lg px-5 py-2`} onClick={no}>NO</Link>
-                    <Link className= {`${music == "ok" ? 'bg-light-blue text-black' : 'bg-dark-blue text-white' } rounded-lg px-5 py-2`} onClick={ok}>OK</Link>
+                    <button className= {`${music == "no" ? 'bg-light-blue text-black' : 'bg-dark-blue text-white' } rounded-lg px-5 py-2`} onClick={no}>NO</button>
+                    <button className= {`${music == "ok" ? 'bg-light-blue text-black' : 'bg-dark-blue text-white' } rounded-lg px-5 py-2`} onClick={ok}>OK</button>
                 </div>
             </div>
         </section>

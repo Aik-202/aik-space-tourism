@@ -6,7 +6,7 @@ export default function Music() {
     const status = JSON.parse(data);
 
     const [button, setButton] = React.useState();
-    const audio= React.useRef()
+    const audio= React.useRef();
 
     React.useEffect(() => {
         if (status == "true") {

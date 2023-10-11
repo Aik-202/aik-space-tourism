@@ -4,10 +4,10 @@ import { nav, destinations } from '../../Data/demo'
 import { useNavigate } from 'react-router-dom'
 
 export default function NavItems(props) {
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const newPage = (e) => {
     if(e.target.innerHTML == "Home") {
-      navigate('/');
+      navigate('/home');
     } 
     if(e.target.innerHTML == "Destination") {
       navigate('/destination');
