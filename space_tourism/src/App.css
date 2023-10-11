@@ -13,6 +13,7 @@ body {
 * {
   margin: 0;
   padding: 0;
+  user-select: none;
 }
 
 .home {
@@ -72,6 +73,9 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  body {
+    overflow-y: hidden;
+  }
   @keyframes hometext {
     0% {
       transform: translateX(-10%);

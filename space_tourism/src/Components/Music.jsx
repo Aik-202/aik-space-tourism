@@ -31,7 +31,7 @@ export default function Music() {
     }
 
     return (
-        <figure className='absolute bottom-5 right-5 rounded-[100%] px-3 py-3 border-2 border-solid border-transparent bg-white'>
+        <figure className='absolute bottom-5 right-5 rounded-[100%] px-3 py-3 border-2 border-solid border-transparent bg-white bg-opacity-20'>
             <audio
             ref={audio}
             src={SpaceMusic}

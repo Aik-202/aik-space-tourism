@@ -19,14 +19,14 @@ export default function ActivateMusic(){
         setMusic("ok");
         setStatus("true");
         setTimeout(() => {
-            window.location.replace('http://localhost:5173/home')
+            window.location.replace('https://aik-space-tourism.vercel.app/home')
         }, 500);
     }
     const no = (e) => {
         setMusic("no");
         setStatus("false")
         setTimeout(() => {
-            window.location.replace('http://localhost:5173/home')
+            window.location.replace('https://aik-space-tourism.vercel.app/home')
         }, 500);
     }
 
