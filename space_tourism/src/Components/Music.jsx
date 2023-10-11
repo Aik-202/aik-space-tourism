@@ -30,8 +30,6 @@ export default function Music() {
         setButton(true);
     }
 
-    console.log(status);
-
     return (
         <figure className='absolute bottom-5 right-5 rounded-[100%] px-3 py-3 border-2 border-solid border-transparent bg-white'>
             <audio
