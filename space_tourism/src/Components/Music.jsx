@@ -17,7 +17,7 @@ export default function Music() {
             audio.current.pause();
             setButton(false);
         }
-    }, [])
+    }, []);
 
     const pause = (e) => {
         window.localStorage.setItem('status', JSON.stringify(false));
