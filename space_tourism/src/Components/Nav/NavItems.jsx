@@ -24,11 +24,11 @@ export default function NavItems(props) {
       {props.use == "main" && <div className=
       {`
       ${props.menuStatus ? 'flex' : 'hidden sm:flex'}
-      flex-col absolute top-0 bottom-0 right-0 left-32 bg-black bg-opacity-[40%] sm:static sm:content-end sm:items-end 
-      sm:flex-wrap sm:justify-center sm:px-8 lg:pr-52 lg:pl-20 cursor-pointer w-full
+      flex-col absolute top-0 bottom-0 left-28 bg-black bg-opacity-[20%] sm:static sm:content-end sm:items-end 
+      sm:flex-wrap sm:justify-center sm:px-8 lg:pr-52 lg:pl-20 cursor-pointer w-[68%] overflow-x-hidden
       `}>
         {props.menuStatus && 
-          <figure className='flex items-end justify-center content-end flex-wrap mt-8 -mr-12 sm:hidden cursor-pointer'>
+          <figure className='flex items-end justify-center content-end flex-wrap mt-8 -mr-48 sm:hidden cursor-pointer'>
             <img src={Close} alt="menu-bar" className="self-end" onClick={props.close}/>
           </figure>
         }
