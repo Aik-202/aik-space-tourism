@@ -24,7 +24,7 @@ export default function NavItems(props) {
       {props.use == "main" && <div className=
       {`
       ${props.menuStatus ? 'flex' : 'hidden sm:flex'}
-      flex-col absolute top-0 bottom-0 right-0 left-32 bg-white bg-opacity-10 sm:static sm:content-end sm:items-end 
+      flex-col absolute top-0 bottom-0 right-0 left-32 bg-white bg-opacity-[40%] sm:static sm:content-end sm:items-end 
       sm:flex-wrap sm:justify-center sm:px-8 lg:pr-52 lg:pl-20 cursor-pointer w-full
       `}>
         {props.menuStatus && 
