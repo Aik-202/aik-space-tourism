@@ -25,7 +25,7 @@ export default function NavItems(props) {
       {`
       ${props.menuStatus ? 'flex' : 'hidden sm:flex'}
       flex-col absolute top-0 bottom-0 right-0 bg-light-blue bg-opacity-10 sm:static sm:content-end sm:items-end 
-      sm:flex-wrap sm:justify-center sm:px-8 lg:pr-52 lg:pl-20 cursor-pointer w-[68%] overflow-x-hidden
+      sm:flex-wrap sm:justify-center sm:px-8 lg:pr-52 lg:pl-20 cursor-pointer w-[68%] overflow-x-hidden md:w-auto md:overflow-hidden
       `}>
         {props.menuStatus && 
           <figure className='flex items-end justify-center content-end flex-wrap mt-8 -mr-48 sm:hidden cursor-pointer'>
